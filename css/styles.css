@@ -1,32 +1,32 @@
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 , h4, h5, h6 {
   font-family: 'DM Serif Text', serif;
 }
-
 p {
   font-family: 'Poppins', sans-serif;
 }
-
-/* Header Styles */
-.h1title {
+.h1title{
   font-family: 'Poppins', sans-serif;
   color: #FF8A84;
-  font-size: 36px;
+  size: 64px;
   font-weight: 300;
   text-align: center;
-  padding: 1%;
-  margin: 20px;
+  padding: 5%;
 }
-
-.momheadertext {
+.momheadertext{
   float: right;
   margin-top: 20%;
   margin-right: 10%;
   color: white;
   font-size: 48px;
 }
-
-/* Body Styles */
+.mainparagraphtext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 body {
   margin: 0;
   padding: 0;
@@ -39,17 +39,6 @@ body {
   color: black;
   margin-bottom: 10px;
 }
-
-.mainparagraphtext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 800px;
-  margin: 5% auto;
-  font-size: 16px
-}
-
 .button-container {
   text-align: center;
   padding: 50px 0px;
@@ -67,9 +56,8 @@ button {
   font-size: 24px;
   border: none;
   padding: 20px;
-}
+}  
 
-/* Navigation Styles */
 .customNav {
   position: absolute;
   width: 100%;
@@ -82,12 +70,10 @@ button {
   margin-right: 0;
   height: 100px;
 }
-
 .customNav .nav-item .nav-link:hover,
 .customNav .nav-item .nav-link:focus {
   border-bottom: 2px solid #FF8A84;
 }
-
 .navbar-brand img {
   padding-right: 5px;
   height: 40px;
@@ -96,7 +82,8 @@ button {
 .nav-item {
   margin: 0px 15px;
 }
-
+ 
+/* Navigation links */
 .customNav a {
   color: white;
 }
@@ -106,13 +93,13 @@ button {
   background-color: #FACEC2;
   color: white;
   border: none;
+  
 }
 
 .nav-item.active .nav-link {
   color: #FACEC2;
 }
 
-/* Header Container */
 .header-container {
   position: relative;
   overflow: hidden;
@@ -120,33 +107,46 @@ button {
 
 .header-image {
   width: auto;
-  height: 603px;
+  height: 574px;
   object-fit: cover;
   position: absolute;
   z-index: 100;
-  margin-top: -34px;
-  margin-left: 20%;
+  margin-top: -19px;
+  margin-left: 14%;
 }
 
-/* Colored Rectangles */
-.colored-rectangle,
-.colored-rectangle2 {
-  width: 100%;
+.customNav {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .colored-rectangle {
   background-color: #FF8A84;
+  width: 100%;
   height: 535px;
+  position: relative;
+  z-index: 0;
 }
 
-.colored-rectangle2 {
+.elementsicons{
+  height: 100%;
+}
+.heroheart{
+  float: right;
+  margin-top: 20%;
+  position: absolute;
+  margin-left: 91%;
+  width: 70px;
+ }
+
+ .colored-rectangle2 {
   background-color: #FACEC2;
+  width: 100%;
   height: 400px;
+  position: relative;
+  z-index: 0;
 }
 
-/* Circles */
 .circles {
   display: flex;
   justify-content: center;
@@ -169,13 +169,22 @@ button {
   width: 300px;
 }
 
-/* Elements Icons */
-.elementsicons,
+.colored-rectangle2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .elementsicons2 {
   height: 100%;
 }
 
-/* Colored Rectangle 3 */
+
+.elementsicons2 {
+  height: 80%;
+  z-index: 5;
+  padding: 0;
+}
 .colored-rectangle3 {
   background-color: #9CBEAF;
   background-image: url("../images/elements3.png");
@@ -189,7 +198,6 @@ button {
   display: flex;
   align-items: center;
 }
-
 .content {
   display: flex;
   flex-direction: column;
@@ -197,8 +205,8 @@ button {
   align-items: flex-start;
   margin-left: 10%;
 }
-
-.girldoctor {
+  
+.girldoctor{
   width: auto;
   height: 695px;
   object-fit: cover;
@@ -228,16 +236,17 @@ button {
 .card-text{
   font-size: 12px;
 }
+
 /* Footer */
 .socialmedia{
   display: inline-block;
   width: 100px;
   margin-left: 12%; 
-}
- .socialmedia img{
+  }
+  .socialmedia img{
   width: 90%;
- }
- footer {
+  }
+  footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,13 +270,13 @@ button {
     padding-inline-start: 0px;
     display: flex;
   }
-
+  
   .footerbar{
     display: inline-block;
     float: right;
     margin: 15px;
    }
-
+  
   footer li {
     padding: 0 20px;
     list-style: none;
